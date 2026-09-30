@@ -162,7 +162,7 @@
       tg.sendData(JSON.stringify(result));   // внутри Telegram: отправка боту
     } else {
       // при открытии в обычном браузере: просто показываем результат
-      form.innerHTML = "<p>Тестовый режим (вне Telegram). Результат:</p><pre></pre>";
+      form.innerHTML = `<p>Тестовый режим (вне Telegram). platform: ${tg.platform}, версия 4. Результат:</p><pre></pre>`;
       form.querySelector("pre").textContent = JSON.stringify(result, null, 2);
     }
   });
