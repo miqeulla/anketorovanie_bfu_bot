@@ -151,7 +151,7 @@
         showError(`Выберите ответ: «${q.text}»`, form.querySelector(`input[name="${q.id}"]`).closest("fieldset"));
         return;
       }
-      answers[q.id] = checked.value;
+      answers[q.text] = checked.value;
     }
     error.textContent = "";
 
